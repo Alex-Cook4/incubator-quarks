@@ -201,7 +201,7 @@ public class IotfRangeSensor {
      * @see IotDevice#commands(String...)
      */
     public static TStream<String> displayMessages(IotDevice device) {
-        // Subscribe to commands of id "status" for this device
+        // Subscribe to commands of id "display" for this device
         TStream<JsonObject> statusMsgs = device.commands("display");
 
         // The returned JSON object includes several fields
